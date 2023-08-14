@@ -1,9 +1,6 @@
-Docker: [![](https://images.microbadger.com/badges/image/thomasnordquist/photon-geocoder.svg)](https://microbadger.com/images/thomasnordquist/photon-geocoder "Get your own image badge on microbadger.com") [![Docker Pulls](https://img.shields.io/docker/pulls/thomasnordquist/photon-geocoder.svg)](https://hub.docker.com/r/thomasnordquist/photon-geocoder/) [![](https://images.microbadger.com/badges/version/thomasnordquist/photon-geocoder.svg)](https://microbadger.com/images/thomasnordquist/photon-geocoder "Get your own version badge on microbadger.com")
+# Photon Docker Peru
 
-Github:
-[![GitHub issues](https://img.shields.io/github/issues/thomasnordquist/photon-docker.svg)](https://github.com/thomasnordquist/photon-docker/issues) [![GitHub stars](https://img.shields.io/github/stars/thomasnordquist/photon-docker.svg)](https://github.com/thomasnordquist/photon-docker/stargazers) [![GitHub forks](https://img.shields.io/github/forks/thomasnordquist/photon-docker.svg)](https://github.com/thomasnordquist/photon-docker/network)
-
-Have your own geocoder up and running within the hour, you will require about 60GB of disk space and has no further dependencies.
+Fork of [Photon Docker](https://github.com/thomasnordquist/photon-docker) to download only Peru data
 
 Feel free to fork and improve.
 
@@ -16,7 +13,7 @@ The data volume is exposed as `/photon/photon_data` and can be mounted, this way
 ## With `docker run`
 
 ```bash
-docker run -p 2322:2322 -it thomasnordquist/photon-geocoder:latest
+docker run -p 2322:2322 -it <image_name>
 ```
 
 ## Search
@@ -29,7 +26,7 @@ http://localhost:2322/api?q=berlin
 
 
 ## Build from git
-https://github.com/thomasnordquist/photon-docker
+https://github.com/jmoranin98/photon-docker
 
 ### With docker-compose
 ```bash
@@ -41,7 +38,7 @@ docker-compose up
 
 ### With `docker build`
 ```bash
-docker build --tag thomasnordquist/photon-geocoder .
+docker build --tag photon-geocoder-peru .
 ```
 
 
